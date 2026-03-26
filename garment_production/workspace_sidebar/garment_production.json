@@ -1,6 +1,6 @@
 {
  "app": "garment_production",
- "creation": "2026-03-26 09:25:57.816403",
+ "creation": "2026-03-26 20:50:30.413710",
  "docstatus": 0,
  "doctype": "Workspace Sidebar",
  "header_icon": "",
@@ -269,15 +269,6 @@
    "collapsible": 1,
    "indent": 0,
    "keep_closed": 0,
-   "link_type": "DocType",
-   "show_arrow": 0,
-   "type": "Link"
-  },
-  {
-   "child": 1,
-   "collapsible": 1,
-   "indent": 0,
-   "keep_closed": 0,
    "label": "Contractor Job Work",
    "link_to": "Contractor Job Work",
    "link_type": "DocType",
@@ -307,7 +298,7 @@
    "type": "Link"
   }
  ],
- "modified": "2026-03-26 09:25:57.816403",
+ "modified": "2026-03-26 20:50:30.413710",
  "modified_by": "Administrator",
  "module": "Garment Production",
  "name": "Garment Production",

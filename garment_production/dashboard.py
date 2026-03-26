@@ -1,4 +1,5 @@
 import frappe
+from frappe.query_builder.functions import Sum
 from frappe.utils import today
 from frappe.utils.data import get_url_to_list
 from frappe.utils import flt
@@ -99,11 +100,30 @@ def get_operations_summary() -> dict:
 
 
 def _sum_field(doctype: str, fieldname: str, filters: dict | None = None) -> float:
-	result = frappe.get_all(
-		doctype,
-		filters=filters or {},
-		fields=[f"sum({fieldname}) as total"],
-	)
+	table = frappe.qb.DocType(doctype)
+	query = frappe.qb.from_(table).select(Sum(table[fieldname]).as_("total"))
+
+	for key, value in (filters or {}).items():
+		if isinstance(value, (list, tuple)) and len(value) == 2:
+			operator, operand = value
+			if operator == ">":
+				query = query.where(table[key] > operand)
+			elif operator == "<":
+				query = query.where(table[key] < operand)
+			elif operator == ">=":
+				query = query.where(table[key] >= operand)
+			elif operator == "<=":
+				query = query.where(table[key] <= operand)
+			elif operator == "!=":
+				query = query.where(table[key] != operand)
+			elif operator == "in":
+				query = query.where(table[key].isin(operand))
+			else:
+				query = query.where(table[key] == operand)
+		else:
+			query = query.where(table[key] == value)
+
+	result = query.run(as_dict=True)
 	return flt((result or [{}])[0].get("total"))
 
 

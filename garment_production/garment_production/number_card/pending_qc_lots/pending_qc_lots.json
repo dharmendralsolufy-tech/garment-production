@@ -1,5 +1,5 @@
 {
- "creation": "2026-03-26 09:25:57.564732",
+ "creation": "2026-03-26 20:50:30.111493",
  "currency": "INR",
  "docstatus": 0,
  "doctype": "Number Card",
@@ -10,7 +10,7 @@
  "is_standard": 1,
  "label": "Pending QC Lots",
  "method": "garment_production.dashboard.get_pending_qc_card",
- "modified": "2026-03-26 09:25:57.564732",
+ "modified": "2026-03-26 20:50:30.111493",
  "modified_by": "Administrator",
  "module": "Garment Production",
  "name": "Pending QC Lots",

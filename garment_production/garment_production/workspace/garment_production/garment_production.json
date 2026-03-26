@@ -43,7 +43,7 @@
   }
  ],
  "content": "[{\"id\":\"gp_header\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Garment Production Workspace</b></span><p class=\\\"text-muted\\\">Procurement, dyeing, cutting, stitching, QC, dispatch, sales invoicing, and payment in one order-to-cash workflow.</p>\",\"col\":12}},{\"id\":\"gp_page\",\"type\":\"card\",\"data\":{\"card_name\":\"Workflow &amp; Control Tower\",\"col\":3}},{\"id\":\"gp_proc\",\"type\":\"card\",\"data\":{\"card_name\":\"Procurement &amp; Stock\",\"col\":3}},{\"id\":\"gp_prod\",\"type\":\"card\",\"data\":{\"card_name\":\"Production &amp; QC\",\"col\":3}},{\"id\":\"gp_bill\",\"type\":\"card\",\"data\":{\"card_name\":\"Sales &amp; Cash\",\"col\":3}},{\"id\":\"gp_card_1\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Submitted Fabric Receipts\",\"col\":3}},{\"id\":\"gp_card_2\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Pending QC Lots\",\"col\":3}},{\"id\":\"gp_card_3\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Dispatch Ready Lots\",\"col\":3}},{\"id\":\"gp_card_4\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Overdue Job Work\",\"col\":3}},{\"id\":\"gp_card_5\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Job Work Value\",\"col\":6}},{\"id\":\"gp_card_6\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Wastage Logged\",\"col\":6}},{\"id\":\"gp_chart_1\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Raw Fabric Receipt Trend\",\"col\":4}},{\"id\":\"gp_chart_2\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Dyeing Output Trend\",\"col\":4}},{\"id\":\"gp_chart_3\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Stitching Output Trend\",\"col\":4}},{\"id\":\"gp_chart_4\",\"type\":\"chart\",\"data\":{\"chart_name\":\"QC Passed Quantity\",\"col\":4}},{\"id\":\"gp_chart_5\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Dispatch Quantity\",\"col\":4}},{\"id\":\"gp_chart_6\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Sales Invoice Value Trend\",\"col\":4}},{\"id\":\"gp_chart_7\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Rejected Quantity Trend\",\"col\":4}},{\"id\":\"gp_chart_8\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Job Work Issue Trend\",\"col\":4}},{\"id\":\"gp_chart_9\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Wastage by Stage\",\"col\":4}},{\"id\":\"gp_header_2\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Workflow Areas</b></span>\",\"col\":12}},{\"id\":\"gp_link_1\",\"type\":\"card\",\"data\":{\"card_name\":\"Setup &amp; Masters\",\"col\":3}},{\"id\":\"gp_link_2\",\"type\":\"card\",\"data\":{\"card_name\":\"Procurement Workflow\",\"col\":3}},{\"id\":\"gp_link_3\",\"type\":\"card\",\"data\":{\"card_name\":\"Production Workflow\",\"col\":3}},{\"id\":\"gp_link_4\",\"type\":\"card\",\"data\":{\"card_name\":\"Sales &amp; Cash Workflow\",\"col\":3}}]",
- "creation": "2026-03-26 09:25:57.680050",
+ "creation": "2026-03-26 20:50:30.317848",
  "custom_blocks": [],
  "docstatus": 0,
  "doctype": "Workspace",
@@ -335,7 +335,7 @@
    "type": "Link"
   }
  ],
- "modified": "2026-03-26 09:25:57.680050",
+ "modified": "2026-03-26 20:50:30.317848",
  "modified_by": "Administrator",
  "module": "Garment Production",
  "name": "Garment Production",

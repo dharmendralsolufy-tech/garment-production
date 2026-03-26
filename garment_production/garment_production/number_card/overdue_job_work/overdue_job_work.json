@@ -1,5 +1,5 @@
 {
- "creation": "2026-03-26 09:25:57.558188",
+ "creation": "2026-03-26 20:50:30.097746",
  "currency": "INR",
  "docstatus": 0,
  "doctype": "Number Card",
@@ -10,7 +10,7 @@
  "is_standard": 1,
  "label": "Overdue Job Work",
  "method": "garment_production.dashboard.get_overdue_job_work_card",
- "modified": "2026-03-26 09:25:57.558188",
+ "modified": "2026-03-26 20:50:30.097746",
  "modified_by": "Administrator",
  "module": "Garment Production",
  "name": "Overdue Job Work",

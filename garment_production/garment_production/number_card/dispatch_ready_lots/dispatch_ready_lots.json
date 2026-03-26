@@ -1,5 +1,5 @@
 {
- "creation": "2026-03-26 09:25:57.547657",
+ "creation": "2026-03-26 20:50:30.052550",
  "currency": "INR",
  "docstatus": 0,
  "doctype": "Number Card",
@@ -10,7 +10,7 @@
  "is_standard": 1,
  "label": "Dispatch Ready Lots",
  "method": "garment_production.dashboard.get_dispatch_ready_card",
- "modified": "2026-03-26 09:25:57.547657",
+ "modified": "2026-03-26 20:50:30.052550",
  "modified_by": "Administrator",
  "module": "Garment Production",
  "name": "Dispatch Ready Lots",

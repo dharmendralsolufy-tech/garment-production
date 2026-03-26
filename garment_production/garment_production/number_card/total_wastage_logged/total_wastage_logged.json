@@ -1,6 +1,6 @@
 {
  "aggregate_function_based_on": "gross_qty",
- "creation": "2026-03-26 09:25:57.576282",
+ "creation": "2026-03-26 20:50:30.144933",
  "currency": "",
  "docstatus": 0,
  "doctype": "Number Card",
@@ -12,7 +12,7 @@
  "is_public": 1,
  "is_standard": 1,
  "label": "Total Wastage Logged",
- "modified": "2026-03-26 09:25:57.576282",
+ "modified": "2026-03-26 20:50:30.144933",
  "modified_by": "Administrator",
  "module": "Garment Production",
  "name": "Total Wastage Logged",

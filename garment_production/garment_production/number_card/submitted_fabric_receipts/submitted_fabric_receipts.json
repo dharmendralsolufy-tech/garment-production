@@ -1,6 +1,6 @@
 {
  "aggregate_function_based_on": "",
- "creation": "2026-03-26 09:25:57.570821",
+ "creation": "2026-03-26 20:50:30.126886",
  "currency": "",
  "docstatus": 0,
  "doctype": "Number Card",
@@ -12,7 +12,7 @@
  "is_public": 1,
  "is_standard": 1,
  "label": "Submitted Fabric Receipts",
- "modified": "2026-03-26 09:25:57.570821",
+ "modified": "2026-03-26 20:50:30.126886",
  "modified_by": "Administrator",
  "module": "Garment Production",
  "name": "Submitted Fabric Receipts",
