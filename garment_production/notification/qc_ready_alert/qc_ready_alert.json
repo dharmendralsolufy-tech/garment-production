@@ -1,0 +1,27 @@
+{
+ "channel": "System Notification",
+ "condition": "doc.docstatus == 1 and doc.stitched_qty > 0",
+ "condition_type": "Python",
+ "creation": "2026-03-26 00:00:00.000000",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Stitching Job Card",
+ "enabled": 1,
+ "event": "Submit",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<p>Stitching job card <b>{{ doc.name }}</b> is ready for quality inspection.</p><p>Style: {{ doc.garment_style }}<br>Stitched Qty: {{ doc.stitched_qty }}<br>Reject Qty: {{ doc.reject_qty }}</p>",
+ "message_type": "HTML",
+ "method": "",
+ "modified": "2026-03-26 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Garment Production",
+ "name": "QC Ready Alert",
+ "owner": "Administrator",
+ "recipients": [
+  {"receiver_by_document_field": "owner"}
+ ],
+ "send_to_all_assignees": 0,
+ "subject": "QC pending for {{ doc.name }}"
+}

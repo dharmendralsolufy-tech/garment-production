@@ -1,0 +1,28 @@
+{
+ "channel": "System Notification",
+ "condition": "doc.docstatus == 1 and doc.received_qty < doc.issue_qty",
+ "condition_type": "Python",
+ "creation": "2026-03-26 00:00:00.000000",
+ "date_changed": "due_date",
+ "days_in_advance": 1,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Contractor Job Work",
+ "enabled": 1,
+ "event": "Days Before",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<p>Contractor job work <b>{{ doc.name }}</b> is due on <b>{{ doc.due_date }}</b>.</p><p>Issue Qty: {{ doc.issue_qty }}<br>Received Qty: {{ doc.received_qty }}<br>Contractor: {{ doc.contractor }}</p>",
+ "message_type": "HTML",
+ "method": "",
+ "modified": "2026-03-26 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Garment Production",
+ "name": "Contractor Job Work Due Reminder",
+ "owner": "Administrator",
+ "recipients": [
+  {"receiver_by_document_field": "owner"}
+ ],
+ "send_to_all_assignees": 0,
+ "subject": "Job Work {{ doc.name }} is due tomorrow"
+}

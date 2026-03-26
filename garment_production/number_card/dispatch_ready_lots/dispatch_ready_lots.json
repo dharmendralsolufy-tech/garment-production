@@ -1,0 +1,20 @@
+{
+ "creation": "2026-03-26 00:00:00.000000",
+ "docstatus": 0,
+ "doctype": "Number Card",
+ "filters_json": "[]",
+ "idx": 0,
+ "is_public": 1,
+ "is_standard": 1,
+ "label": "Dispatch Ready Lots",
+ "method": "garment_production.dashboard.get_dispatch_ready_card",
+ "modified": "2026-03-26 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Garment Production",
+ "name": "Dispatch Ready Lots",
+ "owner": "Administrator",
+ "show_full_number": 0,
+ "show_percentage_stats": 0,
+ "stats_time_interval": "Daily",
+ "type": "Custom"
+}

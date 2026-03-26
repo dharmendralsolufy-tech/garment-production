@@ -1,0 +1,17 @@
+include MANIFEST.in
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include garment_production *.css
+recursive-include garment_production *.csv
+recursive-include garment_production *.html
+recursive-include garment_production *.ico
+recursive-include garment_production *.js
+recursive-include garment_production *.json
+recursive-include garment_production *.md
+recursive-include garment_production *.png
+recursive-include garment_production *.py
+recursive-include garment_production *.svg
+recursive-include garment_production *.txt
+recursive-exclude garment_production *.pyc

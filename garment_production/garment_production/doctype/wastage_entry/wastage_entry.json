@@ -1,0 +1,60 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-03-26 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "entry_date",
+  "stage",
+  "reference_doctype",
+  "reference_name",
+  "item",
+  "gross_qty",
+  "recoverable_qty",
+  "non_recoverable_qty",
+  "disposal_method",
+  "remarks"
+ ],
+ "fields": [
+  {"fieldname": "naming_series", "fieldtype": "Select", "label": "Series", "options": "GPR-WST-.YYYY.-"},
+  {"fieldname": "entry_date", "fieldtype": "Date", "label": "Entry Date", "reqd": 1},
+  {"fieldname": "stage", "fieldtype": "Select", "label": "Stage", "options": "\nDyeing\nCutting\nStitching\nFinishing\nPacking", "reqd": 1},
+  {"fieldname": "reference_doctype", "fieldtype": "Data", "label": "Reference DocType"},
+  {"fieldname": "reference_name", "fieldtype": "Data", "label": "Reference Name"},
+  {"fieldname": "item", "fieldtype": "Link", "label": "Item", "options": "Item"},
+  {"fieldname": "gross_qty", "fieldtype": "Float", "label": "Gross Qty", "reqd": 1},
+  {"fieldname": "recoverable_qty", "fieldtype": "Float", "label": "Recoverable Qty"},
+  {"fieldname": "non_recoverable_qty", "fieldtype": "Float", "label": "Non Recoverable Qty"},
+  {"fieldname": "disposal_method", "fieldtype": "Select", "label": "Disposal Method", "options": "\nRecycle\nRework\nScrap Sale\nDiscard"},
+  {"fieldname": "remarks", "fieldtype": "Small Text", "label": "Remarks"}
+ ],
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-03-26 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Garment Production",
+ "name": "Wastage Entry",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

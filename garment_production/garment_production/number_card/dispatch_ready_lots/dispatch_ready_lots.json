@@ -1,0 +1,23 @@
+{
+ "creation": "2026-03-26 09:25:57.547657",
+ "currency": "INR",
+ "docstatus": 0,
+ "doctype": "Number Card",
+ "filters_json": "[]",
+ "function": "Count",
+ "idx": 0,
+ "is_public": 1,
+ "is_standard": 1,
+ "label": "Dispatch Ready Lots",
+ "method": "garment_production.dashboard.get_dispatch_ready_card",
+ "modified": "2026-03-26 09:25:57.547657",
+ "modified_by": "Administrator",
+ "module": "Garment Production",
+ "name": "Dispatch Ready Lots",
+ "owner": "Administrator",
+ "report_function": "Sum",
+ "show_full_number": 0,
+ "show_percentage_stats": 0,
+ "stats_time_interval": "Daily",
+ "type": "Custom"
+}

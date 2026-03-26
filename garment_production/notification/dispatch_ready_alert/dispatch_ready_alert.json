@@ -1,0 +1,27 @@
+{
+ "channel": "System Notification",
+ "condition": "doc.docstatus == 1 and doc.invoice_ready and doc.passed_qty > 0",
+ "condition_type": "Python",
+ "creation": "2026-03-26 00:00:00.000000",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Quality Inspection",
+ "enabled": 1,
+ "event": "Submit",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<p>Quality inspection <b>{{ doc.name }}</b> is approved and ready for dispatch/invoicing.</p><p>Passed Qty: {{ doc.passed_qty }}<br>Rework Qty: {{ doc.rework_qty }}<br>Rejected Qty: {{ doc.rejected_qty }}</p>",
+ "message_type": "HTML",
+ "method": "",
+ "modified": "2026-03-26 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Garment Production",
+ "name": "Dispatch Ready Alert",
+ "owner": "Administrator",
+ "recipients": [
+  {"receiver_by_document_field": "owner"}
+ ],
+ "send_to_all_assignees": 0,
+ "subject": "Dispatch ready lot {{ doc.name }}"
+}

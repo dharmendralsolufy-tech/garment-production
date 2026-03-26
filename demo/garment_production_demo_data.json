@@ -1,0 +1,269 @@
+{
+  "notes": {
+    "purpose": "Reference demo data for textile and garment production flow",
+    "warning": "Linked ERPNext masters such as Item, Supplier, Customer, Warehouse, and UOM must exist before direct import.",
+    "company_context": "Sample records are intended for a knit t-shirt manufacturing unit."
+  },
+  "settings": {
+    "demo_cycles": 10
+  },
+  "Garment Style": [
+    {
+      "style_name": "TSHIRT-POLO-RED-001",
+      "product_item": "Finished T-Shirt Polo",
+      "customer": "Retail Demo Customer",
+      "product_category": "Polo T-Shirt",
+      "default_uom": "Nos",
+      "gsm": 220,
+      "consumption_per_piece": 0.28,
+      "standard_sewing_minutes": 14,
+      "is_active": 1
+    }
+  ],
+  "Raw Fabric Receipt": [
+    {
+      "naming_series": "GPR-RFR-.YYYY.-",
+      "receipt_date": "2026-03-26",
+      "supplier": "Raw Fabric Supplier",
+      "fabric_item": "Cotton Pique Grey Fabric",
+      "warehouse": "Stores - DP",
+      "lot_no": "LOT-GREY-240326-A",
+      "accepted_qty": 515,
+      "rejected_qty": 5,
+      "remarks": "Initial grey fabric receipt for polo order.",
+      "roll_details": [
+        {
+          "roll_no": "RF-001",
+          "batch_no": "GREY-B1",
+          "shade": "Grey",
+          "qty": 180,
+          "width_inch": 60
+        },
+        {
+          "roll_no": "RF-002",
+          "batch_no": "GREY-B1",
+          "shade": "Grey",
+          "qty": 170,
+          "width_inch": 60
+        },
+        {
+          "roll_no": "RF-003",
+          "batch_no": "GREY-B1",
+          "shade": "Grey",
+          "qty": 170,
+          "width_inch": 60
+        }
+      ]
+    }
+  ],
+  "Dyeing Batch": [
+    {
+      "naming_series": "GPR-DYE-.YYYY.-",
+      "batch_date": "2026-03-27",
+      "raw_fabric_receipt": "GPR-RFR-.YYYY.-0001",
+      "garment_style": "TSHIRT-POLO-RED-001",
+      "dyeing_contractor": "Color Process House",
+      "color": "Red",
+      "shade": "Ruby Red",
+      "input_qty": 515,
+      "output_qty": 500,
+      "wastage_qty": 15,
+      "remarks": "Reactive dyeing batch with standard shrinkage allowance."
+    }
+  ],
+  "Cutting Plan": [
+    {
+      "naming_series": "GPR-CUT-.YYYY.-",
+      "plan_date": "2026-03-28",
+      "garment_style": "TSHIRT-POLO-RED-001",
+      "dyeing_batch": "GPR-DYE-.YYYY.-0001",
+      "input_qty": 1772,
+      "planned_cut_qty": 1760,
+      "wastage_qty": 12,
+      "remarks": "Marker issued for mixed size ratio cutting. Input is represented as cuttable panel-equivalent quantity.",
+      "size_breakdown": [
+        {
+          "size": "S",
+          "qty": 280,
+          "remarks": "Export pack ratio"
+        },
+        {
+          "size": "M",
+          "qty": 520,
+          "remarks": "Export pack ratio"
+        },
+        {
+          "size": "L",
+          "qty": 540,
+          "remarks": "Export pack ratio"
+        },
+        {
+          "size": "XL",
+          "qty": 420,
+          "remarks": "Export pack ratio"
+        }
+      ]
+    }
+  ],
+  "Contractor Job Work": [
+    {
+      "naming_series": "GPR-JOB-.YYYY.-",
+      "job_work_date": "2026-03-29",
+      "contractor": "Alpha Stitching Unit",
+      "process_stage": "Stitching",
+      "garment_style": "TSHIRT-POLO-RED-001",
+      "source_reference": "GPR-CUT-.YYYY.-0001",
+      "issue_qty": 1760,
+      "received_qty": 1715,
+      "wastage_qty": 45,
+      "rate": 28,
+      "due_date": "2026-04-02",
+      "remarks": "Panels and accessories issued to contractor.",
+      "materials": [
+        {
+          "item": "Collar Rib Red",
+          "uom": "Nos",
+          "issued_qty": 1760,
+          "returned_qty": 25
+        },
+        {
+          "item": "Button Set Polo",
+          "uom": "Nos",
+          "issued_qty": 1760,
+          "returned_qty": 10
+        },
+        {
+          "item": "Main Label",
+          "uom": "Nos",
+          "issued_qty": 1760,
+          "returned_qty": 40
+        }
+      ]
+    }
+  ],
+  "Stitching Job Card": [
+    {
+      "naming_series": "GPR-STI-.YYYY.-",
+      "job_card_date": "2026-04-01",
+      "garment_style": "TSHIRT-POLO-RED-001",
+      "cutting_plan": "GPR-CUT-.YYYY.-0001",
+      "contractor_job_work": "GPR-JOB-.YYYY.-0001",
+      "bundle_qty": 1760,
+      "alter_qty": 20,
+      "reject_qty": 25,
+      "remarks": "Line balancing improved from bundle 12 onward.",
+      "size_breakdown": [
+        {
+          "size": "S",
+          "qty": 274,
+          "remarks": "After inline rejection"
+        },
+        {
+          "size": "M",
+          "qty": 507,
+          "remarks": "After inline rejection"
+        },
+        {
+          "size": "L",
+          "qty": 527,
+          "remarks": "After inline rejection"
+        },
+        {
+          "size": "XL",
+          "qty": 407,
+          "remarks": "After inline rejection"
+        }
+      ]
+    }
+  ],
+  "Quality Inspection": [
+    {
+      "naming_series": "GPR-QC-.YYYY.-",
+      "inspection_date": "2026-04-02",
+      "garment_style": "TSHIRT-POLO-RED-001",
+      "stitching_job_card": "GPR-STI-.YYYY.-0001",
+      "inspected_qty": 1715,
+      "passed_qty": 1678,
+      "rework_qty": 22,
+      "rejected_qty": 15,
+      "invoice_ready": 1,
+      "remarks": "Minor seam puckering found in small quantity."
+    }
+  ],
+  "Production Dispatch": [
+    {
+      "naming_series": "GPR-DIS-.YYYY.-",
+      "dispatch_date": "2026-04-03",
+      "customer": "Retail Demo Customer",
+      "garment_style": "TSHIRT-POLO-RED-001",
+      "quality_inspection": "GPR-QC-.YYYY.-0001",
+      "sales_order": "SAL-ORD-2026-0001",
+      "sales_invoice": "ACC-SINV-2026-0001",
+      "transport_mode": "Road Transport",
+      "remarks": "First lot dispatched against approved quality lot.",
+      "size_breakdown": [
+        {
+          "size": "S",
+          "qty": 268,
+          "remarks": "Packed"
+        },
+        {
+          "size": "M",
+          "qty": 495,
+          "remarks": "Packed"
+        },
+        {
+          "size": "L",
+          "qty": 515,
+          "remarks": "Packed"
+        },
+        {
+          "size": "XL",
+          "qty": 400,
+          "remarks": "Packed"
+        }
+      ]
+    }
+  ],
+  "Wastage Entry": [
+    {
+      "naming_series": "GPR-WST-.YYYY.-",
+      "entry_date": "2026-03-27",
+      "stage": "Dyeing",
+      "reference_doctype": "Dyeing Batch",
+      "reference_name": "GPR-DYE-.YYYY.-0001",
+      "item": "Cotton Pique Grey Fabric",
+      "gross_qty": 15,
+      "recoverable_qty": 4,
+      "non_recoverable_qty": 11,
+      "disposal_method": "Recycle",
+      "remarks": "Selvedge and process loss from dyeing."
+    },
+    {
+      "naming_series": "GPR-WST-.YYYY.-",
+      "entry_date": "2026-03-28",
+      "stage": "Cutting",
+      "reference_doctype": "Cutting Plan",
+      "reference_name": "GPR-CUT-.YYYY.-0001",
+      "item": "Cotton Pique Dyed Fabric Red",
+      "gross_qty": 12,
+      "recoverable_qty": 7,
+      "non_recoverable_qty": 5,
+      "disposal_method": "Recycle",
+      "remarks": "Marker edge and panel-end loss."
+    },
+    {
+      "naming_series": "GPR-WST-.YYYY.-",
+      "entry_date": "2026-04-01",
+      "stage": "Stitching",
+      "reference_doctype": "Contractor Job Work",
+      "reference_name": "GPR-JOB-.YYYY.-0001",
+      "item": "Semi Stitched Polo",
+      "gross_qty": 45,
+      "recoverable_qty": 18,
+      "non_recoverable_qty": 27,
+      "disposal_method": "Rework",
+      "remarks": "Open seam and collar mismatch pieces."
+    }
+  ]
+}

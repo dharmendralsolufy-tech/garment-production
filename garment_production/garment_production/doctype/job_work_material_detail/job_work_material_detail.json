@@ -1,0 +1,25 @@
+{
+ "actions": [],
+ "creation": "2026-03-26 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": ["item", "uom", "issued_qty", "returned_qty"],
+ "fields": [
+  {"fieldname": "item", "fieldtype": "Link", "label": "Item", "options": "Item"},
+  {"fieldname": "uom", "fieldtype": "Link", "label": "UOM", "options": "UOM"},
+  {"fieldname": "issued_qty", "fieldtype": "Float", "label": "Issued Qty"},
+  {"fieldname": "returned_qty", "fieldtype": "Float", "label": "Returned Qty"}
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2026-03-26 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Garment Production",
+ "name": "Job Work Material Detail",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

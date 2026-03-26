@@ -1,0 +1,60 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-03-26 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "inspection_date",
+  "garment_style",
+  "stitching_job_card",
+  "qc_status",
+  "inspected_qty",
+  "passed_qty",
+  "rework_qty",
+  "rejected_qty",
+  "invoice_ready",
+  "remarks"
+ ],
+ "fields": [
+  {"fieldname": "naming_series", "fieldtype": "Select", "label": "Series", "options": "GPR-QC-.YYYY.-"},
+  {"fieldname": "inspection_date", "fieldtype": "Date", "label": "Inspection Date", "reqd": 1},
+  {"fieldname": "garment_style", "fieldtype": "Link", "label": "Garment Style", "options": "Garment Style"},
+  {"fieldname": "stitching_job_card", "fieldtype": "Link", "label": "Stitching Job Card", "options": "Stitching Job Card"},
+  {"fieldname": "qc_status", "fieldtype": "Select", "label": "QC Status", "options": "\nPending\nApproved\nRework\nRejected", "read_only": 1},
+  {"fieldname": "inspected_qty", "fieldtype": "Float", "label": "Inspected Qty", "reqd": 1},
+  {"fieldname": "passed_qty", "fieldtype": "Float", "label": "Passed Qty", "reqd": 1},
+  {"fieldname": "rework_qty", "fieldtype": "Float", "label": "Rework Qty"},
+  {"fieldname": "rejected_qty", "fieldtype": "Float", "label": "Rejected Qty"},
+  {"default": "0", "fieldname": "invoice_ready", "fieldtype": "Check", "label": "Invoice Ready"},
+  {"fieldname": "remarks", "fieldtype": "Small Text", "label": "Remarks"}
+ ],
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-03-26 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Garment Production",
+ "name": "Quality Inspection",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

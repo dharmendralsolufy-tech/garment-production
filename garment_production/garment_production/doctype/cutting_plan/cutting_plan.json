@@ -1,0 +1,62 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-03-26 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "plan_date",
+  "garment_style",
+  "dyeing_batch",
+  "cutting_status",
+  "input_qty",
+  "planned_cut_qty",
+  "cut_qty",
+  "wastage_qty",
+  "section_break_sizes",
+  "size_breakdown",
+  "remarks"
+ ],
+ "fields": [
+  {"fieldname": "naming_series", "fieldtype": "Select", "label": "Series", "options": "GPR-CUT-.YYYY.-"},
+  {"fieldname": "plan_date", "fieldtype": "Date", "label": "Plan Date", "reqd": 1},
+  {"fieldname": "garment_style", "fieldtype": "Link", "label": "Garment Style", "options": "Garment Style", "reqd": 1},
+  {"fieldname": "dyeing_batch", "fieldtype": "Link", "label": "Dyeing Batch", "options": "Dyeing Batch"},
+  {"fieldname": "cutting_status", "fieldtype": "Select", "label": "Cutting Status", "options": "\nPlanned\nIn Progress\nCompleted", "read_only": 1},
+  {"fieldname": "input_qty", "fieldtype": "Float", "label": "Input Qty", "reqd": 1},
+  {"fieldname": "planned_cut_qty", "fieldtype": "Float", "label": "Planned Cut Qty"},
+  {"fieldname": "cut_qty", "fieldtype": "Float", "label": "Cut Qty", "read_only": 1},
+  {"fieldname": "wastage_qty", "fieldtype": "Float", "label": "Wastage Qty"},
+  {"fieldname": "section_break_sizes", "fieldtype": "Section Break"},
+  {"fieldname": "size_breakdown", "fieldtype": "Table", "label": "Size Breakdown", "options": "Garment Size Breakdown"},
+  {"fieldname": "remarks", "fieldtype": "Small Text", "label": "Remarks"}
+ ],
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-03-26 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Garment Production",
+ "name": "Cutting Plan",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

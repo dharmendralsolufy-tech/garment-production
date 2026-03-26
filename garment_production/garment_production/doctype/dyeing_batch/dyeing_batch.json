@@ -1,0 +1,60 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-03-26 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "batch_date",
+  "raw_fabric_receipt",
+  "garment_style",
+  "dyeing_contractor",
+  "color",
+  "shade",
+  "input_qty",
+  "output_qty",
+  "wastage_qty",
+  "remarks"
+ ],
+ "fields": [
+  {"fieldname": "naming_series", "fieldtype": "Select", "label": "Series", "options": "GPR-DYE-.YYYY.-"},
+  {"fieldname": "batch_date", "fieldtype": "Date", "label": "Batch Date", "reqd": 1},
+  {"fieldname": "raw_fabric_receipt", "fieldtype": "Link", "label": "Raw Fabric Receipt", "options": "Raw Fabric Receipt"},
+  {"fieldname": "garment_style", "fieldtype": "Link", "label": "Garment Style", "options": "Garment Style"},
+  {"fieldname": "dyeing_contractor", "fieldtype": "Link", "label": "Dyeing Contractor", "options": "Supplier"},
+  {"fieldname": "color", "fieldtype": "Data", "label": "Color"},
+  {"fieldname": "shade", "fieldtype": "Data", "label": "Shade"},
+  {"fieldname": "input_qty", "fieldtype": "Float", "label": "Input Qty", "reqd": 1},
+  {"fieldname": "output_qty", "fieldtype": "Float", "label": "Output Qty", "reqd": 1},
+  {"fieldname": "wastage_qty", "fieldtype": "Float", "label": "Wastage Qty"},
+  {"fieldname": "remarks", "fieldtype": "Small Text", "label": "Remarks"}
+ ],
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-03-26 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Garment Production",
+ "name": "Dyeing Batch",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

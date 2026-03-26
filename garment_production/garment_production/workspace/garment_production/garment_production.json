@@ -1,0 +1,378 @@
+{
+ "app": "garment_production",
+ "charts": [
+  {
+   "chart_name": "Dyeing Output Trend",
+   "label": "Dyeing Output Trend"
+  },
+  {
+   "chart_name": "Job Work Issue Trend",
+   "label": "Job Work Issue Trend"
+  },
+  {
+   "chart_name": "Raw Fabric Receipt Trend",
+   "label": "Raw Fabric Receipt Trend"
+  },
+  {
+   "chart_name": "Wastage by Stage",
+   "label": "Wastage by Stage"
+  },
+  {
+   "chart_name": "Stitching Output Trend",
+   "label": "Stitching Output Trend"
+  },
+  {
+   "chart_name": "QC Passed Quantity",
+   "label": "QC Passed Quantity"
+  },
+  {
+   "chart_name": "Rejected Quantity Trend",
+   "label": "Rejected Quantity Trend"
+  },
+  {
+   "chart_name": "Dispatch Quantity",
+   "label": "Dispatch Quantity"
+  },
+  {
+   "chart_name": "Job Work Value Trend",
+   "label": "Job Work Value Trend"
+  },
+  {
+   "chart_name": "Sales Invoice Value Trend",
+   "label": "Sales Invoice Value Trend"
+  }
+ ],
+ "content": "[{\"id\":\"gp_header\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Garment Production Workspace</b></span><p class=\\\"text-muted\\\">Procurement, dyeing, cutting, stitching, QC, dispatch, sales invoicing, and payment in one order-to-cash workflow.</p>\",\"col\":12}},{\"id\":\"gp_page\",\"type\":\"card\",\"data\":{\"card_name\":\"Workflow &amp; Control Tower\",\"col\":3}},{\"id\":\"gp_proc\",\"type\":\"card\",\"data\":{\"card_name\":\"Procurement &amp; Stock\",\"col\":3}},{\"id\":\"gp_prod\",\"type\":\"card\",\"data\":{\"card_name\":\"Production &amp; QC\",\"col\":3}},{\"id\":\"gp_bill\",\"type\":\"card\",\"data\":{\"card_name\":\"Sales &amp; Cash\",\"col\":3}},{\"id\":\"gp_card_1\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Submitted Fabric Receipts\",\"col\":3}},{\"id\":\"gp_card_2\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Pending QC Lots\",\"col\":3}},{\"id\":\"gp_card_3\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Dispatch Ready Lots\",\"col\":3}},{\"id\":\"gp_card_4\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Overdue Job Work\",\"col\":3}},{\"id\":\"gp_card_5\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Job Work Value\",\"col\":6}},{\"id\":\"gp_card_6\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Wastage Logged\",\"col\":6}},{\"id\":\"gp_chart_1\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Raw Fabric Receipt Trend\",\"col\":4}},{\"id\":\"gp_chart_2\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Dyeing Output Trend\",\"col\":4}},{\"id\":\"gp_chart_3\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Stitching Output Trend\",\"col\":4}},{\"id\":\"gp_chart_4\",\"type\":\"chart\",\"data\":{\"chart_name\":\"QC Passed Quantity\",\"col\":4}},{\"id\":\"gp_chart_5\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Dispatch Quantity\",\"col\":4}},{\"id\":\"gp_chart_6\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Sales Invoice Value Trend\",\"col\":4}},{\"id\":\"gp_chart_7\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Rejected Quantity Trend\",\"col\":4}},{\"id\":\"gp_chart_8\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Job Work Issue Trend\",\"col\":4}},{\"id\":\"gp_chart_9\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Wastage by Stage\",\"col\":4}},{\"id\":\"gp_header_2\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Workflow Areas</b></span>\",\"col\":12}},{\"id\":\"gp_link_1\",\"type\":\"card\",\"data\":{\"card_name\":\"Setup &amp; Masters\",\"col\":3}},{\"id\":\"gp_link_2\",\"type\":\"card\",\"data\":{\"card_name\":\"Procurement Workflow\",\"col\":3}},{\"id\":\"gp_link_3\",\"type\":\"card\",\"data\":{\"card_name\":\"Production Workflow\",\"col\":3}},{\"id\":\"gp_link_4\",\"type\":\"card\",\"data\":{\"card_name\":\"Sales &amp; Cash Workflow\",\"col\":3}}]",
+ "creation": "2026-03-26 09:25:57.680050",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "organization",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Garment Production",
+ "link_type": "DocType",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Setup & Masters",
+   "link_count": 0,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Garment Style",
+   "link_count": 0,
+   "link_to": "Garment Style",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Item",
+   "link_count": 0,
+   "link_to": "Item",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Supplier",
+   "link_count": 0,
+   "link_to": "Supplier",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Customer",
+   "link_count": 0,
+   "link_to": "Customer",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Procurement Workflow",
+   "link_count": 0,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Production Control Tower",
+   "link_count": 0,
+   "link_to": "production-control-t",
+   "link_type": "Page",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Raw Fabric Receipt",
+   "link_count": 0,
+   "link_to": "Raw Fabric Receipt",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Purchase Order",
+   "link_count": 0,
+   "link_to": "Purchase Order",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Purchase Receipt",
+   "link_count": 0,
+   "link_to": "Purchase Receipt",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Purchase Invoice",
+   "link_count": 0,
+   "link_to": "Purchase Invoice",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Production Workflow",
+   "link_count": 0,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Dyeing Batch",
+   "link_count": 0,
+   "link_to": "Dyeing Batch",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Cutting Plan",
+   "link_count": 0,
+   "link_to": "Cutting Plan",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Stitching Job Card",
+   "link_count": 0,
+   "link_to": "Stitching Job Card",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Quality Inspection",
+   "link_count": 0,
+   "link_to": "Quality Inspection",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Production Dispatch",
+   "link_count": 0,
+   "link_to": "Production Dispatch",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Wastage Entry",
+   "link_count": 0,
+   "link_to": "Wastage Entry",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Contractor Job Work",
+   "link_count": 0,
+   "link_to": "Contractor Job Work",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Sales & Cash Workflow",
+   "link_count": 0,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Sales Order",
+   "link_count": 0,
+   "link_to": "Sales Order",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Sales Invoice",
+   "link_count": 0,
+   "link_to": "Sales Invoice",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Payment Entry",
+   "link_count": 0,
+   "link_to": "Payment Entry",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Gross Profit",
+   "link_count": 0,
+   "link_to": "Gross Profit",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Notification",
+   "link_count": 0,
+   "link_to": "Notification",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Notification Log",
+   "link_count": 0,
+   "link_to": "Notification Log",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-03-26 09:25:57.680050",
+ "modified_by": "Administrator",
+ "module": "Garment Production",
+ "name": "Garment Production",
+ "number_cards": [
+  {
+   "label": "Submitted Fabric Receipts",
+   "number_card_name": "Submitted Fabric Receipts"
+  },
+  {
+   "label": "Pending QC Lots",
+   "number_card_name": "Pending QC Lots"
+  },
+  {
+   "label": "Dispatch Ready Lots",
+   "number_card_name": "Dispatch Ready Lots"
+  },
+  {
+   "label": "Overdue Job Work",
+   "number_card_name": "Overdue Job Work"
+  },
+  {
+   "label": "Job Work Value",
+   "number_card_name": "Job Work Value"
+  },
+  {
+   "label": "Total Wastage Logged",
+   "number_card_name": "Total Wastage Logged"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "restrict_to_domain": "",
+ "roles": [],
+ "sequence_id": 1.0,
+ "shortcuts": [],
+ "title": "Garment Production",
+ "type": "Workspace"
+}

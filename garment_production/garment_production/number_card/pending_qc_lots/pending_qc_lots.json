@@ -1,0 +1,23 @@
+{
+ "creation": "2026-03-26 09:25:57.564732",
+ "currency": "INR",
+ "docstatus": 0,
+ "doctype": "Number Card",
+ "filters_json": "[]",
+ "function": "Count",
+ "idx": 0,
+ "is_public": 1,
+ "is_standard": 1,
+ "label": "Pending QC Lots",
+ "method": "garment_production.dashboard.get_pending_qc_card",
+ "modified": "2026-03-26 09:25:57.564732",
+ "modified_by": "Administrator",
+ "module": "Garment Production",
+ "name": "Pending QC Lots",
+ "owner": "Administrator",
+ "report_function": "Sum",
+ "show_full_number": 0,
+ "show_percentage_stats": 0,
+ "stats_time_interval": "Daily",
+ "type": "Custom"
+}
